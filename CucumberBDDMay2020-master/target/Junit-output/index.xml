@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="73.09">
+<testcase classname="To test all the functionality of OrangeHRM Demo App" name="To test login feature from OrangeHRM App" time="48.136">
+<system-out><![CDATA[Given the user launches the url.............................................passed
+When the user login to the App..............................................passed
+Then the user should see the home page "OrangeHRM"..........................passed
+]]></system-out>
+</testcase>
+<testcase classname="To test all the functionality of OrangeHRM Demo App" name="To test Dashboard page present on Home" time="0.156">
+<failure message="expected [Welcome Admin] but found [Welcome Linda]" type="java.lang.AssertionError"><![CDATA[Given the user validates url of the "https://opensource-demo.orangehrmlive.com/index.php/dashboard" current page.passed
+When the user verifies the "Welcome Admin" label on it......................failed
+
+StackTrace:
+java.lang.AssertionError: expected [Welcome Admin] but found [Welcome Linda]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:189)
+	at org.testng.Assert.assertEquals(Assert.java:199)
+	at com.webapp.pages.HomePage.validateWelcome(HomePage.java:31)
+	at com.webapp.steps.OrangeSteps.the_user_verifies_the_label_on_it(OrangeSteps.java:59)
+	at ✽.the user verifies the "Welcome Admin" label on it.(file:///C:/eclipse/moblie%20automation/CucumberBDDMay2020-master/./src/main/java/com/webapp/features/login.feature:14)
+]]></failure>
+</testcase>
+<testcase classname="To test all the functionality of OrangeHRM Demo App" name="To test labels preset in the Admin icon" time="24.076">
+<failure message="lists don't have the same size expected [6] but found [0]" type="java.lang.AssertionError"><![CDATA[Given the user clicks admin icon............................................passed
+When the user verifies labels on it.........................................failed
+
+StackTrace:
+java.lang.AssertionError: lists don't have the same size expected [6] but found [0]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:388)
+	at org.testng.Assert.assertEquals(Assert.java:555)
+	at org.testng.Assert.assertEquals(Assert.java:532)
+	at com.webapp.steps.OrangeSteps.the_user_verifies_labels_on_it(OrangeSteps.java:73)
+	at ✽.the user verifies labels on it(file:///C:/eclipse/moblie%20automation/CucumberBDDMay2020-master/./src/main/java/com/webapp/features/login.feature:23)
+]]></failure>
+</testcase>
+</testsuite>

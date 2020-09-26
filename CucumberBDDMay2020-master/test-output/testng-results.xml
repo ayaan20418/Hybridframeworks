@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" ignored="0" total="3" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="76032" started-at="2020-09-21T09:54:09Z" finished-at="2020-09-21T09:55:25Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.webapp.runner.TestRunner@2e37bc]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Test" duration-ms="76032" started-at="2020-09-21T09:54:09Z" finished-at="2020-09-21T09:55:25Z">
+      <class name="com.webapp.runner.TestRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.webapp.runner.TestRunner@2e37bc]" name="setUpClass" is-config="true" duration-ms="1557" started-at="2020-09-21T15:24:09Z" finished-at="2020-09-21T15:24:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.webapp.runner.TestRunner@2e37bc]" name="runScenario" duration-ms="48766" started-at="2020-09-21T15:24:10Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-09-21T15:24:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To test login feature from OrangeHRM App"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["To test all the functionality of OrangeHRM Demo App"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.webapp.runner.TestRunner@2e37bc]" name="runScenario" duration-ms="162" started-at="2020-09-21T15:24:59Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-09-21T15:24:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To test Dashboard page present on Home"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["To test all the functionality of OrangeHRM Demo App"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Welcome Admin] but found [Welcome Linda]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Welcome Admin] but found [Welcome Linda]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:189)
+	at org.testng.Assert.assertEquals(Assert.java:199)
+	at com.webapp.pages.HomePage.validateWelcome(HomePage.java:31)
+	at com.webapp.steps.OrangeSteps.the_user_verifies_the_label_on_it(OrangeSteps.java:59)
+	at ✽.the user verifies the "Welcome Admin" label on it.(file:///C:/eclipse/moblie%20automation/CucumberBDDMay2020-master/./src/main/java/com/webapp/features/login.feature:14)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.webapp.runner.TestRunner@2e37bc]" name="runScenario" duration-ms="24086" started-at="2020-09-21T15:24:59Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-09-21T15:25:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To test labels preset in the Admin icon"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["To test all the functionality of OrangeHRM Demo App"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[lists don't have the same size expected [6] but found [0]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: lists don't have the same size expected [6] but found [0]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:388)
+	at org.testng.Assert.assertEquals(Assert.java:555)
+	at org.testng.Assert.assertEquals(Assert.java:532)
+	at com.webapp.steps.OrangeSteps.the_user_verifies_labels_on_it(OrangeSteps.java:73)
+	at ✽.the user verifies labels on it(file:///C:/eclipse/moblie%20automation/CucumberBDDMay2020-master/./src/main/java/com/webapp/features/login.feature:23)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.webapp.runner.TestRunner@2e37bc]" name="tearDownClass" is-config="true" duration-ms="1372" started-at="2020-09-21T15:25:23Z" finished-at="2020-09-21T15:25:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.webapp.runner.TestRunner -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
